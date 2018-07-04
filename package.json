@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-semipretty",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "An ESLint config combining semistandard and prettier",
   "main": ".eslintrc.js",
   "repository": "https://github.com/robhowell/eslint-config-semipretty.git",
