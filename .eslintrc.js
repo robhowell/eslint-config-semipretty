@@ -8,7 +8,7 @@ module.exports = {
       'error',
       {
         singleQuote: true
-      },
+      }
     ]
-  },
+  }
 };
