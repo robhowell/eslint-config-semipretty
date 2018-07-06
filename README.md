@@ -36,7 +36,27 @@ node_modules/
 }
 ```
 
-## Bonus: if using React
+## Bonus: Automatically lint files on commit
+
+`husky` allows you run commands automatically when Git events occur, such as when code is committed. `lint-staged` ensures that only new and modified files are linted, to that the process is as fast as possible.
+
+1) Install `husky`: run `yarn add --dev husky lint-staged` or `npm install --save-dev husky lint-staged`
+
+2) Add the `precommit` script to the `scripts` object and add the `lint-staged` object to your `package.json`:
+
+```javascript
+"scripts": {
+  "lint": "eslint .",
+  "lint-fix": "eslint . --fix",
+  "precommit": "lint-staged"
+},
+"lint-staged": {
+  "*.js": ["eslint --fix", "git add"]
+}
+```
+
+
+## If you're using React
 
 - Install `eslint-plugin-react`: run `yarn add --dev eslint-plugin-react` or `npm install --save-dev eslint-plugin-react`
 - In your `.eslintrc.js` file, add the plugin and extend the default configuration, e.g.
@@ -48,7 +68,7 @@ module.exports = {
 };
 ```
 
-## Bonus: if using Jest
+## If you're using Jest
 
 - Install `eslint-plugin-jest`: run `yarn add --dev eslint-plugin-jest` or `npm install --save-dev eslint-plugin-jest`
 - In your `.eslintrc.js` file, add the plugin and extend the default configuration, e.g.
@@ -60,7 +80,7 @@ module.exports = {
 };
 ```
 
-## Bonus: if using experimental JavaScript features
+## If you're using experimental JavaScript features
 
 If you are using experimental JavaScript features such as class properties, you may encounter parsing errors which can be fixed by adding `babel-eslint`.
 
