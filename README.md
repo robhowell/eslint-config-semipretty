@@ -7,8 +7,6 @@ An ESLint config combining semistandard and prettier
 
 - Run `npx install-peerdeps --dev eslint-config-semipretty`
 
-<small>**Note**: if using npm <5, you will need to install eslint-config-semipretty and all peer dependencies manually instead.</small>
-
 ## Setup
 
 1. Create an `.eslintrc.js` file in the root of your project, with the following contents:
