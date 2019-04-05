@@ -40,16 +40,20 @@ node_modules/
 
 1) Install `husky`: run `npm install --save-dev husky lint-staged`
 
-2) Add the `precommit` script to the `scripts` object and add the `lint-staged` object to your `package.json`:
+2) Add the `lint-staged` and `husky` objects to your `package.json`:
 
 ```javascript
 "scripts": {
   "lint": "eslint .",
-  "lint-fix": "eslint . --fix",
-  "precommit": "lint-staged"
+  "lint-fix": "eslint . --fix"
 },
 "lint-staged": {
   "*.js": ["eslint --fix", "git add"]
+},
+"husky": {
+  "hooks": {
+    "pre-commit": "lint-staged"
+  }
 }
 ```
 
