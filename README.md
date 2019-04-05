@@ -38,7 +38,7 @@ node_modules/
 
 `husky` allows you run commands automatically when Git events occur, such as when code is committed. `lint-staged` ensures that only new and modified files are linted, to that the process is as fast as possible.
 
-1) Install `husky`: run `yarn add --dev husky lint-staged` or `npm install --save-dev husky lint-staged`
+1) Install `husky`: run `npm install --save-dev husky lint-staged`
 
 2) Add the `precommit` script to the `scripts` object and add the `lint-staged` object to your `package.json`:
 
@@ -56,7 +56,7 @@ node_modules/
 
 ## If you're using React
 
-- Install `eslint-plugin-react`: run `yarn add --dev eslint-plugin-react` or `npm install --save-dev eslint-plugin-react`
+- Install `eslint-plugin-react`: run `npm install --save-dev eslint-plugin-react`
 - In your `.eslintrc.js` file, add the plugin and extend the default configuration, e.g.
 
 ```javascript
@@ -68,7 +68,7 @@ module.exports = {
 
 ## If you're using Jest
 
-- Install `eslint-plugin-jest`: run `yarn add --dev eslint-plugin-jest` or `npm install --save-dev eslint-plugin-jest`
+- Install `eslint-plugin-jest`: `npm install --save-dev eslint-plugin-jest`
 - In your `.eslintrc.js` file, add the plugin and extend the default configuration, e.g.
 
 ```javascript
@@ -82,7 +82,7 @@ module.exports = {
 
 If you are using experimental JavaScript features such as class properties, you may encounter parsing errors which can be fixed by adding `babel-eslint`.
 
-- Install `babel-eslint`: Run `yarn add --dev babel-eslint` or `npm install --save-dev babel-eslint`
+- Install `babel-eslint`: Run `npm install --save-dev babel-eslint`
 - Set `babel-eslint` as the parser in your `.eslintrc.js` file, for example:
 
 ```javascript
