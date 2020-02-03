@@ -1,4 +1,4 @@
-[![Build Status](https://www.travis-ci.com/robhowell/eslint-config-semipretty.svg?branch=master)](https://www.travis-ci.com/robhowell/eslint-config-semipretty)
+[![npm version](https://badge.fury.io/js/eslint-config-semipretty.svg)](https://badge.fury.io/js/eslint-config-semipretty)
 
 # eslint-config-semipretty
 An ESLint config combining semistandard and prettier
